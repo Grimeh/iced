@@ -174,8 +174,8 @@ where
     }
 
     /// Sets the width of the [`TextEditor`].
-    pub fn width(mut self, width: impl Into<Pixels>) -> Self {
-        self.width = Length::from(width.into());
+    pub fn width(mut self, width: impl Into<Length>) -> Self {
+        self.width = width.into();
         self
     }
 
